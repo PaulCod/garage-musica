@@ -1,0 +1,25 @@
+<main class="band-container">
+
+ <div class="band-content">
+  <div class="band-data space">
+    <h1>{{bandName}}</h1>
+
+    <div class="image-container">
+      <img [src]="imgUrl" alt="">
+    </div>
+
+    <div class="band-description ">
+      <p>{{description}}</p>
+    </div>
+  </div>
+
+  <div class="list-music space">
+    <h2>Musicas</h2>
+    <ol class="music-list">
+      <li class="list-item" *ngFor="let music of musicsList"><a [routerLink]="['/music', music.videoId]">{{music.musicName}}</a></li>
+    </ol>
+  </div>
+ </div>
+
+
+</main>

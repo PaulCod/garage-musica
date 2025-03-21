@@ -1,0 +1,17 @@
+<main class="music-container">
+    <div class="main-content">
+      <div class="letra-container space">
+        <h2>{{musicName}}</h2>
+        <pre>{{musicLyric}}</pre>
+      </div>
+
+      <div class="video-container space">
+        <iframe width="560" height="315"
+          [src]="safeUrl"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+</main>
